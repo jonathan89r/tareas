@@ -4,8 +4,14 @@
 }
 
 body {
-  font-family: monospace;
+  font-family: calibri;
   font-size: 15px;
+}
+
+hr {
+  border: 1px solid #16a085;
+  width: 40%;
+  margin: 5px auto;
 }
 
 header {
@@ -24,7 +30,7 @@ header {
 .container .col {
   text-align: center;
   margin: auto;
-  padding: 2%;
+  padding: 3%;
 }
 
 
@@ -57,19 +63,86 @@ div#lista-productos div {
   width: 90%;
   background: white;
   margin: 1em auto;
-  border-radius: 3px;
+  border-radius: 6px;
 }
 
 div#lista-productos div .md {
-  background: rgb(210, 125, 147);
   width: 100%;
   float: left;
+  text-align: center;
 }
 div#lista-productos div .md > img {
-  width: 50%;
+  width: 30%;
+}
+
+div#lista-productos div .md>p {
+  margin: 3em;
+  background: rgba(22, 159, 132, 0.25);
+  width: 95%;
+  height: auto;
+  margin: auto;
+  color: #16a085;
+  border-radius: 6px;
+  padding: 1em;
 }
 
 h2 {
   text-align: center;
-  padding: 15px;
+  margin: 3px auto;
+  background: rgba(22, 159, 132, 0.25);
+  width: 97%;
+  border-radius: 6px;
+  padding: 6px;
+  color: #16a085;
+}
+
+h1 {
+  font-weight: 400;
+  color: #16a085;
+}
+
+strong {
+  font-size: 20px;
+  color: #16a085;
+}
+
+div#lista-productos div .md > img:hover {
+transform: scale(0.9);
+transition: 0.6s;
+}
+
+/*---------------------------------------------------------------------------*/
+
+ #ofertas {
+    width: 90%;
+    height: auto;
+    display: flex;
+    margin: auto;
+    text-align: center;
+
+}
+
+ #ofertas .col-3 {
+  width: 30%;
+  margin: auto;
+}
+
+#ofertas .col-3 div.md2 {
+  width: 100%;
+}
+
+#ofertas .col-3 div.md2 > img:hover {
+transform: scale(0.9);
+transition: 0.6s;
+}
+
+#ofertas .col-3 div.md2>p {
+  margin: 3em;
+  background: rgba(22, 159, 132, 0.25);
+  width: 95%;
+  height: auto;
+  margin: auto;
+  color: #16a085;
+  border-radius: 6px;
+  padding: 1em;
 }
