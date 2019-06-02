@@ -8,7 +8,25 @@ $(document).ready(function(){
     $("#text").val("");
   });
 
+  //eliminar un elemento li del DOM
+  $("ul").on("click", "img", function(event){
+      $(this).parent().fadeOut(500, function(){
+        $(this).remove(".li, #delete,.center");
+      })
+  });
+
+  //eliminar todos los elementos del DOM
+  $("#clean").on("click", function(){
+    $(".li, #delete,.center").fadeOut(500, function(){
+      $(".li, #delete,.center").remove();
+    });
+    $("#text").val("");
+  });
+
 });
+
+
+
 
 //function para mostrar los datos en pantalla
 function ver(){
@@ -16,28 +34,13 @@ function ver(){
 
   if (text.length > 0) {
     $("#show").append(
-         "<br class='br'>"
-         + "<center class='center'>"
+          "<center class='center'>"
          +"<li class='li' onClick='tachar(this);'>" +
-          text
+          text +"<img src='images/delete.png'/>"
          +"</li>"
-         +"<button id='delete' onClick='eliminar(this);'>X</button> "
          + "</center>"
     )
   }
-};
-
-
-//eliminar un elemento li del DOM
-function eliminar(element){
-  $(element).remove();
-};
-
-//eliminar todos los elementos del DOM
-function eliminarTodo(){
-  var items = $(".li, #delete, .br,.center");
-  $(items).remove();
-  $("#text").val("");
 };
 
 //function para tachar la tarea
