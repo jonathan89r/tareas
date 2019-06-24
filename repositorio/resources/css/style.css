@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.text-centered {
+  text-align: center !important; }
+
+.title-medium {
+  font-size: 20px !important; }
+
+.column:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+  -webkit-box-shadow: 10px 17px 5px -2px white;
+  -moz-box-shadow: 10px 17px 5px -2px white;
+  box-shadow: 10px 17px 5px -2px white; }
+
+.column {
+  -webkit-box-shadow: 10px 17px 5px -2px rgba(0, 0, 0, 0.13);
+  -moz-box-shadow: 10px 17px 5px -2px rgba(0, 0, 0, 0.13);
+  box-shadow: 10px 17px 5px -2px rgba(0, 0, 0, 0.13); }
